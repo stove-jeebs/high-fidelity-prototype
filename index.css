@@ -134,6 +134,7 @@ table {
 	font-family: "Source Code Pro", monospace;
 	font-weight: 600;
 	font-size: 20px;
+	overflow: hidden;
 }
 
 /* navbar */
@@ -282,4 +283,41 @@ nav {
 
 #about-us > .cornered {
 	border-top: 10px solid #6d5ddd;
+}
+
+/* content section */
+
+#content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 4em 0;
+}
+
+#content > div:first-child {
+	text-align: center;
+}
+
+#content > div:first-child > h2 {
+	font-size: 1.5em;
+	font-weight: 700;
+	margin-bottom: 0.5em;
+	color: #0e294b;
+}
+
+#svg {
+	display: flex;
+	align-items: center;
+	width: 60vw;
+	justify-content: space-between;
+	gap: 2em;
+	padding: 2em 0 0;
+}
+
+.svg-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1em;
+	gap: 2em;
 }
