@@ -136,6 +136,8 @@ table {
 	font-size: 20px;
 }
 
+/* navbar */
+
 nav {
 	display: flex;
 	align-items: center;
@@ -185,7 +187,7 @@ nav {
 	outline: none;
 }
 
-.button-container {
+.trigger-modal {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -197,7 +199,7 @@ nav {
 	background: #0e294b;
 }
 
-.button {
+.register-button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -208,14 +210,76 @@ nav {
 	width: 95px;
 	padding: 16px 18px 16px 18px;
 	background: #ffffff;
-	border: 2px solid #000000;
+	border: 2px solid #0e294b;
 	overflow: hidden;
-	box-shadow: -6px 6px 0 0 #000000;
+	box-shadow: -6px 6px 0 0 #0e294b;
 	cursor: pointer;
 	transition: 100ms ease-in-out;
 }
 
-.button:hover {
-	background-color: black;
+.register-button:hover {
+	background-color: #0e294b;
 	color: white;
+}
+
+/* hero section */
+
+#hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2em;
+	margin: 1em 0;
+	padding: 4em 0;
+	background-image: url("background.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+#hero h1 {
+	max-width: 15em;
+	color: #0e294b;
+	font-size: 50px;
+	font-weight: 600;
+	text-align: center;
+	font-size: 3em;
+	color: white;
+}
+
+.button-container {
+	display: flex;
+	padding: 20px;
+	background-color: inherit;
+	color: white;
+	gap: 20px;
+}
+
+.main-button {
+	width: 10em;
+	height: fit-content;
+	padding: 1em 0 0.6em;
+	text-align: center;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 400;
+}
+.cornered {
+	width: 140px;
+	border-right: 10px solid transparent;
+}
+
+#explore-now > .main-button {
+	background-color: #4834d4;
+}
+
+#explore-now > .cornered {
+	border-top: 10px solid #4834d4;
+}
+
+#about-us > .main-button {
+	background-color: #6d5ddd;
+}
+
+#about-us > .cornered {
+	border-top: 10px solid #6d5ddd;
 }
