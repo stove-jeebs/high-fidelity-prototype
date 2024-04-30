@@ -188,7 +188,7 @@ nav {
 	outline: none;
 }
 
-.trigger-modal {
+#trigger-modal {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -320,4 +320,39 @@ nav {
 	align-items: center;
 	margin-top: 1em;
 	gap: 2em;
+}
+
+/* registration form section */
+
+.invisible {
+	display: none;
+}
+
+.screen-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #0e294b79;
+	z-index: 10;
+	backdrop-filter: blur(5px);
+}
+
+.form-ct {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	border-radius: 10px;
+	z-index: 20;
+}
+
+.register-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2em;
+	padding: 2em 0 0;
 }
