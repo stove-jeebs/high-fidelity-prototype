@@ -376,6 +376,11 @@ nav {
 	border-radius: 5px;
 }
 
+.form-group > input::placeholder {
+	color: #0e294b;
+	opacity: 0.5;
+}
+
 .close {
 	position: absolute;
 	right: 4.5%;
@@ -383,6 +388,7 @@ nav {
 	padding: 0.2em 0.5em 0.2em;
 	font-weight: bold;
 	font-size: 10px;
+	transition: 80ms linear;
 }
 
 .close:hover {
@@ -401,4 +407,8 @@ nav {
 	border-radius: 5px;
 	cursor: pointer;
 	transition: 100ms ease-in-out;
+}
+
+#submit:hover {
+	background-color: #4834d4;
 }
