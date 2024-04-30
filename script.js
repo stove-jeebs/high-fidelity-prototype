@@ -1,6 +1,5 @@
-const triggerModal = document.querySelector("#trigger-modal");
-const modal = document.querySelector("#modal");
+const modal = document.getElementById("modal");
 
-triggerModal.addEventListener("click", () => {
-	modal.classList.toggle("invisible");
-});
+const toggleModal = () => {
+	modal.style.display = modal.style.display == "block" ? "none" : "block";
+};

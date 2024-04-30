@@ -34,7 +34,7 @@
 
 			<!-- register button -->
 			<div id="trigger-modal">
-				<div class="register-button">Register</div>
+				<div class="register-button" onclick="toggleModal()">Register</div>
 			</div>
 		</nav>
 
@@ -81,32 +81,32 @@
 		</main>
 
 		<!-- registration form -->
-		<article id="modal" class="">
+		<article id="modal">
 			<div class="screen-overlay"></div>
 
 			<div class="form-ct">
-				<button class="close">&times;</button>
-				<form action="post" id="register-form">
+				<button class="close" onclick="toggleModal()">✖</button>
+				<form action="#" id="form-sections">
 					<div id="user-details">
 						<!-- Given Name -->
 						<div class="form-group">
 							<label for="given-name">Given Name</label>
-							<input type="text" name="given-name" id="given-name" />
+							<input type="text" name="given-name" id="given-name" placeholder="name" />
 						</div>
 						<!-- Surname -->
 						<div class="form-group">
 							<label for="surname">Surname</label>
-							<input type="text" name="surname" id="surname" />
+							<input type="text" name="surname" id="surname" placeholder="surname" />
 						</div>
 						<!-- Username -->
 						<div class="form-group">
 							<label for="username">Username</label>
-							<input type="text" name="username" id="username" />
+							<input type="text" name="username" id="username" placeholder="username" />
 						</div>
 						<!-- password -->
 						<div class="form-group">
 							<label for="password">Password</label>
-							<input type="password" name="password" id="password" />
+							<input type="password" name="password" id="password" placeholder="password" />
 						</div>
 					</div>
 
@@ -114,12 +114,12 @@
 						<!-- home address -->
 						<div class="form-group">
 							<label for="home-address">Home Address</label>
-							<input type="text" name="home-address" id="home-address" />
+							<input type="text" name="home-address" id="home-address" placeholder="address1" />
 						</div>
 						<!-- work address -->
 						<div class="form-group">
 							<label for="work-address">Work Address</label>
-							<input type="email" name="work-address" id="work-address" />
+							<input type="email" name="work-address" id="work-address" placeholder="address2" />
 						</div>
 					</div>
 
@@ -127,16 +127,18 @@
 						<!-- phone number -->
 						<div class="form-group">
 							<label for="mobile-num">Mobile Number</label>
-							<input type="number" name="mobile-num" id="mobile-num" />
+							<input type="number" name="mobile-num" id="mobile-num" placeholder="e.g. 02041462964" />
 						</div>
 						<!-- email -->
 						<div class="form-group">
 							<label for="email">Email</label>
-							<input type="email" name="email" id="email" />
+							<input type="email" name="email" id="email" placeholder="e.g. lho445@aucklanduni.ac.nz" />
 						</div>
 					</div>
+					<input type="submit" value="Submit" id="submit" />
 				</form>
 			</div>
 		</article>
+		<script src="script.js"></script>
 	</body>
 </html>

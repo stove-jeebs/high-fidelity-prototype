@@ -324,7 +324,7 @@ nav {
 
 /* registration form section */
 
-.invisible {
+#modal {
 	display: none;
 }
 
@@ -347,12 +347,58 @@ nav {
 	background-color: white;
 	border-radius: 10px;
 	z-index: 20;
+	padding: 1.5em;
+	width: 30vw;
 }
 
-.register-form {
+#form-sections {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	gap: 2em;
 	padding: 2em 0 0;
+}
+
+#form-sections > div {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8em;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+
+.form-group > input {
+	padding: 1em;
+	border: 1px solid #0e294b;
+	border-radius: 5px;
+}
+
+.close {
+	position: absolute;
+	right: 4.5%;
+	border-radius: 100%;
+	padding: 0.2em 0.5em 0.2em;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.close:hover {
+	background-color: #0e294b;
+	color: white;
+	border-color: #0e294b;
+}
+
+#submit {
+	width: 100%;
+	font-size: 15px;
+	padding: 1.5em;
+	background-color: #0e294b;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 100ms ease-in-out;
 }
