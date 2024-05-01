@@ -418,9 +418,6 @@ nav {
 
 @media screen and (max-width: 1920px) {
 	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
 		padding: 10px 3em 10px;
 	}
 }
