@@ -311,7 +311,7 @@ nav {
 	width: 60vw;
 	justify-content: space-between;
 	gap: 2em;
-	padding: 2em 0 0;
+	padding: 4em 0 0;
 }
 
 .svg-item {
@@ -320,6 +320,9 @@ nav {
 	align-items: center;
 	margin-top: 1em;
 	gap: 2em;
+	max-width: 10em;
+	text-align: center;
+	font-weight: 700;
 }
 
 /* registration form section */
@@ -411,4 +414,13 @@ nav {
 
 #submit:hover {
 	background-color: #4834d4;
+}
+
+@media screen and (max-width: 1920px) {
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px 3em 10px;
+	}
 }
