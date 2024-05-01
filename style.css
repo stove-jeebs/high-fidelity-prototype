@@ -166,8 +166,12 @@ nav {
 	transition: 150ms ease-in-out;
 }
 
+#home {
+	color: #6d5ddd !important;
+}
+
 #navlinks a:hover {
-	color: #4d8fdf;
+	color: #6d5ddd;
 }
 
 #searchbar {
